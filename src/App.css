@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'Sansita Swashed', cursive;
 }
 
 .App-logo {
@@ -35,4 +36,35 @@
   to {
     transform: rotate(360deg);
   }
+}
+/* my styles */
+html, body {
+  background-image: url('././media/laurine-bailly-dIQlgwq6V3Y-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.landing-tag {
+  font-size: 36px;
+  padding-top: 20px;
+  float: left;
+}
+
+.landing-par {
+  padding-top: 1%;
+  float: left;
+  padding-right: 700px;
+}
+
+.collection-title {
+  color: black;
+}
+
+.header {
+  padding-bottom: 25px;
+}
+
+.collection-page-title {
+  border-bottom: 1px;
+  border-color: black;
 }
