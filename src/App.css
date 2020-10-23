@@ -68,3 +68,22 @@ html, body {
   border-bottom: 1px;
   border-color: black;
 }
+
+.story-tile {
+  border-radius: 50px;
+  padding-top: 20px;
+  box-shadow: 30px;
+  background:rgba(255,255,255, 0.4);
+  border: 1px solid;
+}
+
+.story-row {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
+.story-button {
+  border-radius: 10px
+}

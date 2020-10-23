@@ -6,33 +6,39 @@ const collections = [
         stories: [
             {
                 id: 1,
-                title: 'brilliant',
-                attributes: {}
+                title: 'slivers',
+                attributes: {},
+                blurb: ""
             },
             {
                 id: 2,
-                title: 'abate',
-                attributes: {}
+                title: 'the artist w no name',
+                attributes: {},
+                blurb: ""
             },
             {
                 id: 3,
-                title: 'weed `blunt`',
-                attributes: {}
+                title: 'i used to wait on this woman\'s lawn at 3 am',
+                attributes: {},
+                blurb: ""
             },
             {
                 id: 4,
-                title: 'scandal',
-                attributes: {}
+                title: 'self learning',
+                attributes: {},
+                blurb: ""
             },
             {
                 id: 5,
-                title: 'experience',
-                attributes: {}
+                title: 'when you look into a lake',
+                attributes: {},
+                blurb: ""
             },
             {
                 id: 6,
-                title: 'highlight',
-                attributes: {}
+                title: 'K.C. and a mission to end homelessness',
+                attributes: {},
+                blurb: ""
             },
         ]
     },
@@ -48,7 +54,44 @@ const collections = [
         id: 3,
         title: "The Unfamiliar and All That Comes With It", 
         thumbnail: "", 
-        stories: []
+        stories: [
+            {
+                id: 1,
+                title: 'brilliant',
+                attributes: {},
+                blurb: ""
+            },
+            {
+                id: 2,
+                title: 'abate',
+                attributes: {},
+                blurb: ""
+            },
+            {
+                id: 3,
+                title: 'weed `blunt`',
+                attributes: {},
+                blurb: ""
+            },
+            {
+                id: 4,
+                title: 'scandal',
+                attributes: {},
+                blurb: ""
+            },
+            {
+                id: 5,
+                title: 'experience',
+                attributes: {},
+                blurb: ""
+            },
+            {
+                id: 6,
+                title: 'highlight',
+                attributes: {},
+                blurb: ""
+            },
+        ]
     },
     {
         id: 4,
