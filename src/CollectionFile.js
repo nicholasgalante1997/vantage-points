@@ -7,7 +7,9 @@ const collections = [
             {
                 id: 1,
                 title: 'slivers',
-                attributes: {},
+                attributes: {
+                    
+                },
                 blurb: ""
             },
             {
