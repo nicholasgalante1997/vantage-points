@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import StoryTile from '../StoryComponents/StoryTile'
 import {Container, Row, Button} from 'reactstrap'
+import Stories from '../../data/stories'
+
 
 const CollectionPage = (props) => {
 
@@ -9,21 +11,33 @@ const CollectionPage = (props) => {
     const toggleShowStory = () => {
         setMoreInfo(!moreInfo)
     }
-    
-    console.log(moreInfo)
+
+    const thisCollection = props.location.state.collection
+    const myStories = [...Stories.filter(story => story.collectionId === thisCollection.id )]
+
     return ( 
-        <div>
-            <em className='collection-page-title'>{props.location.state.collection.title}</em>
-            <Container>
-                { moreInfo ? <Button onClick={toggleShowStory}>Toggle Me</Button> : 
-                <Row className='story-row'>
-                {props.location.state.collection.stories.map(story => 
-                <StoryTile title={story.title} blurb={story.blurb} 
-                toggleShowStory={toggleShowStory} /> )}
-                </Row>}
-            </Container>
-        </div>
+        <Container fluid>
+            <Row style={styles.topRow}>
+                <h4 style={styles.collectionTitle}>{thisCollection.title}</h4>
+            </Row>
+            <Row>
+                {myStories.map(story => <StoryTile 
+                key={story.id} story={story}
+                />)}
+            </Row>
+        </Container>
      );
+}
+
+const styles = {
+    topRow: {
+        paddingTop: 50,
+        paddingLeft: 25,
+        paddingBottom: 50
+    },
+    collectionTitle: {
+        fontSize: 54
+    }
 }
  
 export default CollectionPage;
